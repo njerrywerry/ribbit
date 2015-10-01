@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :relationships
   resources :ribits
   get 'sessions/new'
 
