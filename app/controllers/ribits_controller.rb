@@ -1,4 +1,8 @@
 class RibitsController < ApplicationController
+  def index
+    @ribits = Ribit.all
+    @ribit = Ribit.new
+  end
 
   def create
     @ribit = Ribit.new(ribits_params)
