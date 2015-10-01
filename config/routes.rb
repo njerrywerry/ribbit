@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :ribits
   get 'sessions/new'
 
   post 'sessions/create'
