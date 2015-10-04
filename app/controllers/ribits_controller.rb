@@ -1,6 +1,6 @@
 class RibitsController < ApplicationController
   def index
-    @ribits = Ribit.all
+    @ribits = Ribit.all.order("created_at DESC")
     @ribit = Ribit.new
   end
 
