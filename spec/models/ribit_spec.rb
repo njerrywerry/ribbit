@@ -1,5 +1,10 @@
 require "rails_helper"
 
 describe Ribit do
-  it "has a length of 140 characters"
+  it "has a valid factory" do
+    expect(FactoryGirl.create(:ribit)).to be_valid
+  end
+  it "has a length of 140 characters" do
+    expect(FactoryGirl.build(:ribit, content: 140)).to be_valid
+  end
 end
