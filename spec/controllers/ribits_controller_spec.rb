@@ -2,11 +2,11 @@ require 'rails_helper'
 
 describe RibitsController do
   describe "GET #index" do
-    # it "populates an array of ribits" do
-    #   ribit = create(:ribit)
-    #   get :index
-    #   expect(assigns(:ribits)).to match_array ([ribit])
-    # end
+    it "populates an array of ribits" do
+      ribit = Ribit.create
+      get :index
+      expect(assigns(:ribits)).to eq([ribit])
+    end
     it "renders the :index view" do
       get :index
       expect(response).to render_template("index")
