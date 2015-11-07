@@ -29,4 +29,10 @@ class User < ActiveRecord::Base
     self.avatar_url = "http://www.gravatar.com/avatar/#{Digest::MD5.hexdigest(self.email)}?s=50"
   end
 
+  # It returns the users whose usernames contain one or more words that form the query
+ def self.search(query)
+   # where(:username, query) -> This would return an exact match of the query
+   where("username like ?", "%#{query}%")
+ end
+
 end
