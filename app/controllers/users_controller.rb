@@ -20,7 +20,7 @@ class UsersController < ApplicationController
     @user = User.new(users_params)
     if @user.save
       session[:user_id] = @user.id
-      redirect_to @user, notice: "Welcome to Ribbit!"
+      redirect_to @user, notice: "Welcome to Cuckoo!"
     else
       render 'new'
     end

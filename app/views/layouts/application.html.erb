@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ribbit</title>
+  <title>Cuckoo</title>
     <link rel="stylesheet/less" href="/style.less">
     <script src="/less.js"></script>
 </head>
 <body>
     <header>
         <div class="wrapper">
-            <img src="/gfx/logo.png">
-            <span>Twitter Clone</span>
+            <img src="/gfx/Cuckoo.png">
             <% if current_user %>
-              <%= link_to "Public Ribbits", ribits_path %> ||
+              <%= link_to "Public Cuckoos", ribits_path %> ||
               <%= link_to "Public Profiles", users_path %> ||
               <%= link_to "My Profile", current_user %> ||
-              <%= link_to "Buddies' Ribbits", buddies_path %> ||
+              <%= link_to "Buddies' Cuckoos", buddies_path %> ||
               <%= link_to "Log Out", sessions_destroy_path %>
             <% else %>
               <%= form_tag sessions_create_path do %>
