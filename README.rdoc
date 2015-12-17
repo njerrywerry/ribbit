@@ -1,6 +1,6 @@
 == README
 
-A Ruby on Rails based Twitter clone.
+A Ruby on Rails based social media application.
 
 Rails version: 4.2.3
 Ruby version: 2.2.2
